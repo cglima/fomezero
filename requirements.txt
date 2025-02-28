@@ -1,2 +1,4 @@
 pandas
 inflection
+streamlit
+streamlit_antd_components

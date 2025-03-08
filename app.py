@@ -1,6 +1,5 @@
 import streamlit as st
 import streamlit_antd_components as sac
-from PIL import Image
 
 
 # Configuração da página
@@ -10,20 +9,16 @@ st.set_page_config(
     layout="wide",
 )
 
-st.title("Fome Zero! Comida para todos")
-st.markdown("""---""")
+st.sidebar.title("Projeto Fome Zero")
+st.sidebar.image("images/cuisines.jpg", width=250)
 
-image = Image.open("/home/cassiana/repos/fomezero/images/cuisines.jpg")
-st.sidebar.image(image, width=250)
-
-# st.sidebar.title("Menu")
-menu_options = ["🧭 Home", "🗺️ Countries", "🏙️ Cities", "🍲 Cuisines"]
-choice = st.sidebar.selectbox("Menu", menu_options)
+menu_options = ["🏠 Home", "🧭 General Informations",
+                "🗺️ Countries", "🏙️ Cities", "🍲 Cuisines"]
+choice = st.sidebar.selectbox("", menu_options)
 st.sidebar.markdown("""---""")
 
 match choice:
-    case "🧭 Home":
-        # st.header("Home")
+    case "🏠 Home":
         st.write("### Bem-vindo à página inicial")
         st.markdown("""---""")
         st.markdown(
@@ -34,18 +29,20 @@ match choice:
             - Você pode filtrar as informações usando os filtros disponíveis
             - Você pode clicar em um item para ver mais detalhes
             """)
+
+    case "🧭 General Informations":
+        st.write("### Informações Gerais")
+        st.markdown("""---""")
+
     case "🗺️ Countries":
-        # st.header("Countries")
         st.write("### Informações sobre os países")
         st.markdown("""---""")
     case "🏙️ Cities":
-        # st.header("Cities")
         st.write("### Informações sobre as cidades")
         st.markdown("""---""")
     case "🍲 Cuisines":
-        # st.header("Cuisines")
         st.write("### Informações sobre as cozinhas")
         st.markdown("""---""")
 
-
-st.sidebar.markdown("### Powered by Cassiana Lima Barreto")
+st.markdown("""---""")
+st.write("Powered by Cassiana Lima Barreto")

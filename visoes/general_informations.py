@@ -1,5 +1,3 @@
-from locale import currency
-from pyparsing import C
 import streamlit as st
 import pandas as pd
 import folium

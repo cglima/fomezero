@@ -1,4 +1,5 @@
 pandas
 inflection
 streamlit
-streamlit_antd_components
+folium
+streamlit_folium

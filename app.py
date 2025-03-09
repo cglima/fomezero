@@ -3,12 +3,12 @@ import streamlit as st
 
 # Configuração da página
 st.set_page_config(
-    page_title="Projeto Fome Zero",
+    page_title="Buxim Cheio",
     page_icon="🍽",
     layout="wide",
 )
 
-st.sidebar.title("Projeto Fome Zero")
+st.sidebar.title("Buxim Cheio")
 # st.sidebar.image("images/cuisines.jpg", width=250)
 st.sidebar.markdown("""---""")
 st.sidebar.write("## Menu de Navegação")

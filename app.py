@@ -10,12 +10,15 @@ st.set_page_config(
 )
 
 st.sidebar.title("Projeto Fome Zero")
-st.sidebar.image("images/cuisines.jpg", width=250)
-
+# st.sidebar.image("images/cuisines.jpg", width=250)
+st.sidebar.markdown("""---""")
+st.sidebar.write("## Menu de Navegação")
 menu_options = ["🏠 Home", "🧭 General Informations",
                 "🗺️ Countries", "🏙️ Cities", "🍲 Cuisines"]
-choice = st.sidebar.selectbox("Escolha uma opção", menu_options)
+choice = st.sidebar.selectbox("", menu_options)
 st.sidebar.markdown("""---""")
+st.sidebar.markdown("### Powered by Cassiana Lima Barreto")
+
 
 match choice:
     case "🏠 Home":

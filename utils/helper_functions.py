@@ -24,10 +24,10 @@ COLORS = {
     "3F7E00": "darkgreen",
     "5BA829": "green",
     "9ACD32": "lightgreen",
-    "CDD614": "orange",
-    "FFBA00": "red",
-    "CBCBC8": "darkred",
-    "FF7800": "darkred",
+    "CDD614": "yellow",
+    "FFBA00": "orange",
+    "CBCBC8": "gray",
+    "FF7800": "darkorange",
 }
 
 

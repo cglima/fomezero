@@ -16,7 +16,7 @@ menu_options = ["🏠 Home", "🧭 General Informations",
                 "🗺️ Countries", "🏙️ Cities", "🍲 Cuisines"]
 choice = st.sidebar.selectbox("", menu_options)
 st.sidebar.markdown("""---""")
-st.sidebar.markdown("### Powered by Cassiana Lima Barreto")
+# st.sidebar.markdown("### Powered by Cassiana Lima Barreto")
 
 
 match choice:
